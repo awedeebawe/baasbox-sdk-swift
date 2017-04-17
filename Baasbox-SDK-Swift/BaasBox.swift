@@ -40,7 +40,6 @@ import RNCryptor
 
 
 open class BaasBox {
-    
     public static let publicShared = BaasBox()
     static let shared = BaasBox()
     var user = BaasBox.getSavedUser()
