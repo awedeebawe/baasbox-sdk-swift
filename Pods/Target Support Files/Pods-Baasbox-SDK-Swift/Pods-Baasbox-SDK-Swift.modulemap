@@ -1,0 +1,6 @@
+framework module Pods_Baasbox_SDK_Swift {
+  umbrella header "Pods-Baasbox-SDK-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
