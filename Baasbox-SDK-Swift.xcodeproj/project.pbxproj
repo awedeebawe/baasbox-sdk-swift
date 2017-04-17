@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B883D11EB743E9F52D750D /* Pods_Baasbox_SDK_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF3F1DB7DD282DD8227AA9A /* Pods_Baasbox_SDK_Swift.framework */; };
 		C746299A1EA5151700C508F9 /* Baasbox-SDK-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = C74629981EA5151700C508F9 /* Baasbox-SDK-Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C74629A31EA5152500C508F9 /* BaasBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74629A01EA5152500C508F9 /* BaasBox.swift */; };
+		C74629A41EA5152500C508F9 /* BaasConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74629A11EA5152500C508F9 /* BaasConfig.swift */; };
+		C74629A51EA5152500C508F9 /* BaasUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74629A21EA5152500C508F9 /* BaasUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C74629951EA5151700C508F9 /* Baasbox-SDK-Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Baasbox-SDK-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		365A97A0850887914E911C3C /* Pods-Baasbox-SDK-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baasbox-SDK-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baasbox-SDK-Swift/Pods-Baasbox-SDK-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF3F1DB7DD282DD8227AA9A /* Pods_Baasbox_SDK_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baasbox_SDK_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6426C57D5DD7CAAF8320C6 /* Pods-Baasbox-SDK-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baasbox-SDK-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baasbox-SDK-Swift/Pods-Baasbox-SDK-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		C74629951EA5151700C508F9 /* BaasboxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaasboxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74629981EA5151700C508F9 /* Baasbox-SDK-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baasbox-SDK-Swift.h"; sourceTree = "<group>"; };
 		C74629991EA5151700C508F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74629A01EA5152500C508F9 /* BaasBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaasBox.swift; sourceTree = "<group>"; };
+		C74629A11EA5152500C508F9 /* BaasConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaasConfig.swift; sourceTree = "<group>"; };
+		C74629A21EA5152500C508F9 /* BaasUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaasUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,24 +31,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B883D11EB743E9F52D750D /* Pods_Baasbox_SDK_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148BD923F6C8B655510884E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				365A97A0850887914E911C3C /* Pods-Baasbox-SDK-Swift.debug.xcconfig */,
+				7A6426C57D5DD7CAAF8320C6 /* Pods-Baasbox-SDK-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		231BF8CFF5C7B65470019759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3F1DB7DD282DD8227AA9A /* Pods_Baasbox_SDK_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C746298B1EA5151700C508F9 = {
 			isa = PBXGroup;
 			children = (
 				C74629971EA5151700C508F9 /* Baasbox-SDK-Swift */,
 				C74629961EA5151700C508F9 /* Products */,
+				148BD923F6C8B655510884E7 /* Pods */,
+				231BF8CFF5C7B65470019759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C74629961EA5151700C508F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C74629951EA5151700C508F9 /* Baasbox-SDK-Swift.framework */,
+				C74629951EA5151700C508F9 /* BaasboxSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,6 +76,9 @@
 		C74629971EA5151700C508F9 /* Baasbox-SDK-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C74629A01EA5152500C508F9 /* BaasBox.swift */,
+				C74629A11EA5152500C508F9 /* BaasConfig.swift */,
+				C74629A21EA5152500C508F9 /* BaasUser.swift */,
 				C74629981EA5151700C508F9 /* Baasbox-SDK-Swift.h */,
 				C74629991EA5151700C508F9 /* Info.plist */,
 			);
@@ -66,22 +99,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C74629941EA5151700C508F9 /* Baasbox-SDK-Swift */ = {
+		C74629941EA5151700C508F9 /* BaasboxSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C746299D1EA5151700C508F9 /* Build configuration list for PBXNativeTarget "Baasbox-SDK-Swift" */;
+			buildConfigurationList = C746299D1EA5151700C508F9 /* Build configuration list for PBXNativeTarget "BaasboxSDK" */;
 			buildPhases = (
+				04862077AC5B68E10081AF56 /* [CP] Check Pods Manifest.lock */,
 				C74629901EA5151700C508F9 /* Sources */,
 				C74629911EA5151700C508F9 /* Frameworks */,
 				C74629921EA5151700C508F9 /* Headers */,
 				C74629931EA5151700C508F9 /* Resources */,
+				682AEAE60EEE2BA5BBB57109 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Baasbox-SDK-Swift";
+			name = BaasboxSDK;
 			productName = "Baasbox-SDK-Swift";
-			productReference = C74629951EA5151700C508F9 /* Baasbox-SDK-Swift.framework */;
+			productReference = C74629951EA5151700C508F9 /* BaasboxSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -96,6 +131,7 @@
 					C74629941EA5151700C508F9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 92B49Q6AZ2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C74629941EA5151700C508F9 /* Baasbox-SDK-Swift */,
+				C74629941EA5151700C508F9 /* BaasboxSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -127,11 +163,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04862077AC5B68E10081AF56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		682AEAE60EEE2BA5BBB57109 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Baasbox-SDK-Swift/Pods-Baasbox-SDK-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C74629901EA5151700C508F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74629A41EA5152500C508F9 /* BaasConfig.swift in Sources */,
+				C74629A51EA5152500C508F9 /* BaasUser.swift in Sources */,
+				C74629A31EA5152500C508F9 /* BaasBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +311,9 @@
 		};
 		C746299E1EA5151700C508F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365A97A0850887914E911C3C /* Pods-Baasbox-SDK-Swift.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92B49Q6AZ2;
@@ -252,13 +326,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.skylark.Baasbox-SDK-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C746299F1EA5151700C508F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6426C57D5DD7CAAF8320C6 /* Pods-Baasbox-SDK-Swift.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92B49Q6AZ2;
@@ -287,13 +364,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C746299D1EA5151700C508F9 /* Build configuration list for PBXNativeTarget "Baasbox-SDK-Swift" */ = {
+		C746299D1EA5151700C508F9 /* Build configuration list for PBXNativeTarget "BaasboxSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C746299E1EA5151700C508F9 /* Debug */,
 				C746299F1EA5151700C508F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
